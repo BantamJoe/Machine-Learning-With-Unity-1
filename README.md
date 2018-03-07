@@ -17,7 +17,7 @@ We use the following in our simulation:
 
 We will create a simple maze to begin with , very basic.
 
-[![2018-03-06_23-35-07.png](https://s18.postimg.org/9unnckrpl/2018-03-06_23-35-07.png)](https://postimg.org/image/q5nr8w479/)
+[![Unity_2018-03-07_01-10-56.png](https://s18.postimg.org/x1d1ox2d5/Unity_2018-03-07_01-10-56.png)](https://postimg.org/image/wbu9ck1th/)
 
 Set-up: A Cube can move in four different directions, with rewards being given to better positions releative to the goal.
 
