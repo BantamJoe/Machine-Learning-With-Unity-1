@@ -3,13 +3,13 @@
 For this project we will be working in Unity 2017.3.1f.
 
 We use the following in our simulation:
--Jupyter
--Matplotlib
--numpy
--Pillow
--Python (2 or 3; 64bit required)
--docopt (Training)
--TensorFlow (1.0+) (Training)
+- Jupyter
+- Matplotlib
+- numpy
+- Pillow
+- Python (2 or 3; 64bit required)
+- docopt (Training)
+- TensorFlow (1.0+) (Training)
 
 
 
