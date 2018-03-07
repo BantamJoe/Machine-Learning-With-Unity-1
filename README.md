@@ -66,6 +66,10 @@ We are making steady progress, it appears we hit the goal sometimes!
 Step: 500000. Mean Reward: 95.1213043478261. Std of Reward: 23.166009077084173.
 It looks like we hit the goal most of the time, but waste some time getting there.
 
+- After 500000 Steps are agent can now make it to the goal most of the time. 
+
+[![Maze_Gif.gif](https://s18.postimg.org/x56v4vabt/Maze_Gif.gif)](https://postimg.org/image/4fjz886bp/)
+
 Clearly we are making progress! This can continue until we are near perfect..
 
 Next to make some harder maps..
