@@ -24,10 +24,10 @@ Goal: Move to the green capsule, using the most rewarding path.
 Agents: The enviorment contains one single agent linked to one brain.
 
 Reward Function:
-  -.1 for each move move
-  +.2 if progressive made ( Closer to goal than before )
-  -100 for hitting a wall 
-  +100 for hitting the end
+ - -.1 for each move move
+ - +.2 if progressive made ( Closer to goal than before )
+ - -100 for hitting a wall 
+ - +100 for hitting the end
   
 
 
