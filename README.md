@@ -2,6 +2,8 @@
 
 For this project we will be working in Unity 2017.3.1f.
 
+And using ML-Agents : https://github.com/Unity-Technologies/ml-agents
+
 We use the following in our simulation:
 - Jupyter
 - Matplotlib
