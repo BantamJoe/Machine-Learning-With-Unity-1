@@ -28,7 +28,7 @@ Agents: The enviorment contains one single agent linked to one brain.
 Reward Function:
  - -.1 for each move move
  - +.2 if progressive made ( Closer to goal than before )
- - -100 for hitting a wall 
+ - -1.0 for hitting a wall 
  - +100 for hitting the end
   
 
