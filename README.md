@@ -50,7 +50,7 @@ Reset Parameters:
     
 
 
-After running our agent through some training..
+After training our agent using Proximal Policy Optimization provided by Unity ML Agents:
 
 Step: 20000. Mean Reward: 2.2039705882352942. Std of Reward: 17.152717169394837.
 
