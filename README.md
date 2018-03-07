@@ -48,6 +48,9 @@ Reset Parameters:
    - If the agent collides with the end goal collider
     
     
+    
+--------------------------
+
 
 
 After training our agent using Proximal Policy Optimization provided by Unity ML Agents:
