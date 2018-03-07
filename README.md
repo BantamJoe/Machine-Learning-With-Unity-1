@@ -8,8 +8,8 @@ We use the following in our simulation:
 - numpy
 - Pillow
 - Python (2 or 3; 64bit required)
-- docopt (Training)
-- TensorFlow (1.0+) (Training)
+- CUDA toolkit 9.0
+- TensorFlow (1.4) (Training)
 
 
 
