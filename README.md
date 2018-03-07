@@ -52,7 +52,7 @@ Reset Parameters:
 
 After running our agent through 320,000 training steps:
 
-Step: 20000. Mean Reward: 2.2039705882352942. Std of Reward: 17.152717169394837.
+ Step: 20000. Mean Reward: 2.2039705882352942. Std of Reward: 17.152717169394837.
 Saved Model
 Step: 40000. Mean Reward: 19.964368932038834. Std of Reward: 40.8634720609201.
 Saved Model
