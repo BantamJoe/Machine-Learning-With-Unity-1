@@ -1,3 +1,7 @@
+/*
+CollisionScript.cs used to update the agents values when colliding with wall or goal.
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
