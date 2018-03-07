@@ -30,4 +30,20 @@ Reward Function:
  - +100 for hitting the end
   
 
+Brain: One Brain 
+ - State Space:(Continuous) 6 Variables 
+    - Agents Status ( Alive or not ) 
+    - Agents X,Y,Z position on map
+    - Agents Distance to goal
+    - If the Agent has reached the goal
+ 
+ - Action Space:(Discrete) 4 variables
+    - Movement in 4 directions N W S E
+    
+Reset Parameters:
+  Two:
+   - If the agent collides with a wall
+   - If the agent collides with the end goal collider
+    
+
 
