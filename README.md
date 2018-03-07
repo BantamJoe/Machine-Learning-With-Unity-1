@@ -17,6 +17,10 @@ We use the following in our simulation:
 
 We will create a simple maze to begin with , very basic.
 
+The red walls are tagged "KILL" , the green capsul is tagged "END", when our cube encounters collision, we check the tag.
+
+We attach a CollisionScript.cs to our cube, which will work with our CubeAgent.cs class to set its reset parameters when we encounter a wall or a capsul ( end goal )
+
 [![Unity_2018-03-07_01-10-56.png](https://s18.postimg.org/x1d1ox2d5/Unity_2018-03-07_01-10-56.png)](https://postimg.org/image/wbu9ck1th/)
 
 Set-up: A Cube can move in four different directions, with rewards being given to better positions releative to the goal.
