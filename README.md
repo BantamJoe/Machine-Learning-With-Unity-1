@@ -164,18 +164,23 @@ Agents: The enviorment contains one single agent linked to one brain.
 
 Reward Function:
  - -.01 for each move move
- -  +1 if progressive made torwards goal
- -  -1 if negative progress torwards goal
- -  +4 if progress made torwards goal and farther away from begining
+ - +.01 for each move away from start
+ - + 1 if closer to goal but also closer to start ( + 2 if closest wall is farther than 7.5)
+ - + 2 if closer to goal AND closer to start
+ - + 4 is closer to goal AND closer to start AND nearest wall is >7.5 away
+ - - 1  if closer to start than before
+ 
  - -.5 if a wall is 7.5F or closer
- - -50.0 for hitting a wall 
- - +100 for hitting the end
+ - -100.0 for hitting a wall 
+ - +300 for hitting the end
   
 
 Brain: One Brain 
- - State Space:(Continuous) 6 Variables 
+ - State Space:(Continuous) 8 Variables 
     - Agents Status ( Alive or not ) 
+    - Closest wall to agent
     - Agents X,Y,Z position on map
+    - Agents Distance to begining
     - Agents Distance to goal
     - If the Agent has reached the goal
  
@@ -184,22 +189,13 @@ Brain: One Brain
     
 Reset Parameters:
   Two:
-   - If the agent collides with a wall
+   - If the agent collides with a wall peg
    - If the agent collides with the end goal collider
     
     
     
 --------------------------
 
-
-Rewards:
- - -.5 if closest wall is < 7.5 away 
- - +4.0 if making progressive away from start, torwards goal and no walls are within 7.5 distance of us
- - 
-
-- We will update our CubeAgent to add additional state parameters: The closest wall and the dist to the begining
-- We will add additional reward parameters based on distance to closest wall and distance to the point we were before the step in relativty to the end point and start point.
-- We calculate to see if we are further away from our start point each step as well, to rule out wastes of time.
 
 [![Unity_2018-03-08_01-36-55.png](https://s18.postimg.org/onpwdxzrd/Unity_2018-03-08_01-36-55.png)](https://postimg.org/image/ims7gvd51/)
 
