@@ -80,7 +80,7 @@ Next to make some harder maps..
 
 Lets add a object to get in the way sometimes..
 
-[![Traffic_Gif.gif](https://s18.postimg.org/ssrm8a3bd/Traffic_Gif.gif)](https://postimg.org/image/plx2oniv9/)
+[![Traffic_Gif2.gif](https://s18.postimg.org/ytpb5q81l/Traffic_Gif2.gif)](https://postimg.org/image/5ejmwq3hx/)
 --------------------------
 
 Set-up: A Cube can move in four different directions, with rewards being given to better positions releative to the goal as
@@ -128,5 +128,5 @@ Reset Parameters:
 
 
 
-
+[![Traffic_Gif3.gif](https://s18.postimg.org/642f94ec9/Traffic_Gif3.gif)](https://postimg.org/image/ez39jn34l/)
 
