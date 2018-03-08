@@ -78,3 +78,55 @@ Clearly we are making progress! This can continue until we are near perfect..
 
 Next to make some harder maps..
 
+Lets add a object to get in the way sometimes..
+
+[![Traffic_Gif.gif](https://s18.postimg.org/ssrm8a3bd/Traffic_Gif.gif)](https://postimg.org/image/plx2oniv9/)
+--------------------------
+
+Set-up: A Cube can move in four different directions, with rewards being given to better positions releative to the goal as
+well as better rewards for being on a safer path and avoiding getting close to a passing "car".
+
+Goal: Move to the green sphere, using the most safe path avoiding the car.
+
+Agents: The enviorment contains one single agent linked to one brain.
+
+Reward Function:
+ - -.01 for each move
+ - +.02 if progressive made ( Closer to goal than before )
+ - -.02 if decreased progressive
+ - +.02 for being on the safe path
+ - -.1 for being on dangerous grounds(near edge)
+ - -15  for getting to close to a car
+ - -50  for falling off platform or getting hit by car
+ - +100 for hitting the goal
+  
+
+Brain: One Brain 
+ - State Space:(Continuous) 12 Variables 
+    - Agents Status ( Alive or not ) 
+    - Agents current ground its on ( safe or dangerous )
+    - Agents X,Y,Z position on map
+    - Car X,Y,Z position on map
+    - Agents Distance to goal
+    - Agents Distance to car
+    - The Cars status: Moving or Stationary ( 5 roations of moving, then 5 seconds of resting )
+    - If the Agent has reached the goal
+ 
+ - Action Space:(Discrete) 4 variables
+    - Movement in 4 directions N W S E
+    
+Reset Parameters:
+  Two:
+   - If the agent falls of the platform
+   - If the agent gets hit by the car
+   - If the agent collides with the end goal collider
+    
+    
+    
+--------------------------
+
+
+
+
+
+
