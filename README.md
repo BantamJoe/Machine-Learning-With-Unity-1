@@ -153,8 +153,44 @@ Lets plug our newly trained brain into the traffic civilian and see how well he 
 
 
 We can see our Agent slightly veers to the right in instances when the car is on the oposite side as well as studder steping back when the car approaches from the right.. maybe after a million or two steps we could get full avoidance!
-
+---------------------------
 Lets create a "Peg" maze, where each red cube is considered a wall and in each step, our agent determines its relative distance to its closest "wall", giving better rewards for positiong.
+
+Set-up: A Cube can move in four different directions, with rewards being given for safer paths away from walls.
+
+Goal: Move to the green capsule, using the most rewarding path away from walls if you can.
+
+Agents: The enviorment contains one single agent linked to one brain.
+
+Reward Function:
+ - -.01 for each move move
+ -  +1 if progressive made torwards goal
+ -  -1 if negative progress torwards goal
+ -  +4 if progress made torwards goal and farther away from begining
+ - -.5 if a wall is 7.5F or closer
+ - -50.0 for hitting a wall 
+ - +100 for hitting the end
+  
+
+Brain: One Brain 
+ - State Space:(Continuous) 6 Variables 
+    - Agents Status ( Alive or not ) 
+    - Agents X,Y,Z position on map
+    - Agents Distance to goal
+    - If the Agent has reached the goal
+ 
+ - Action Space:(Discrete) 4 variables
+    - Movement in 4 directions N W S E
+    
+Reset Parameters:
+  Two:
+   - If the agent collides with a wall
+   - If the agent collides with the end goal collider
+    
+    
+    
+--------------------------
+
 
 Rewards:
  - -.5 if closest wall is < 7.5 away 
