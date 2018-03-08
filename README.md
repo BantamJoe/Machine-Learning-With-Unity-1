@@ -214,4 +214,4 @@ As you can see, the reienforced learning does solve the maze most of the time, y
 [![Peg_Maze_KKSteps.gif](https://s18.postimg.org/8cpshkae1/Peg_Maze_KKSteps.gif)](https://postimg.org/image/4gcglkped/)
 
 
-If we change our wall check to perhaps ~ 12-15 instead of 7.5 we may avoid that corner better.
+If we change our wall check to perhaps ~ 12-15 instead of 7.5 and give better reward for say +25 away from walls, we can get a much safer path i think.
