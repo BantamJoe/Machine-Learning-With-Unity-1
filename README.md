@@ -1,6 +1,7 @@
 # Machine-Learning-With-Unity
 
-For this project we will be working in Unity 2017.3.1f.
+For this repo we will be working in Unity 2017.3.1f to train on various scenarios with Machine Learning techniques.
+
 
 And using ML-Agents : https://github.com/Unity-Technologies/ml-agents
 
@@ -154,6 +155,11 @@ Lets plug our newly trained brain into the traffic civilian and see how well he 
 We can see our Agent slightly veers to the right in instances when the car is on the oposite side as well as studder steping back when the car approaches from the right.. maybe after a million or two steps we could get full avoidance!
 
 Lets create a "Peg" maze, where each red cube is considered a wall and in each step, our agent determines its relative distance to its closest "wall", giving better rewards for positiong.
+
+Rewards:
+ - -.5 if closest wall is < 7.5 away 
+ - +4.0 if making progressive away from start, torwards goal and no walls are within 7.5 distance of us
+ - 
 
 - We will update our CubeAgent to add additional state parameters: The closest wall and the dist to the begining
 - We will add additional reward parameters based on distance to closest wall and distance to the point we were before the step in relativty to the end point and start point.
