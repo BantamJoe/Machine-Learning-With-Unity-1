@@ -154,7 +154,15 @@ Lets plug our newly trained brain into the traffic civilian and see how well he 
 We can see our Agent slightly veers to the right in instances when the car is on the oposite side as well as studder steping back when the car approaches from the right.. maybe after a million or two steps we could get full avoidance!
 
 Lets create a "Peg" maze, where each red cube is considered a wall and in each step, our agent determines its relative distance to its closest "wall", giving better rewards for positiong.
+
+- We will update our CubeAgent to add additional state parameters: The closest wall and the dist to the begining
+- We will add additional reward parameters based on distance to closest wall and distance to the point we were before the step in relativty to the end point and start point.
+- We calculate to see if we are further away from our start point each step as well, to rule out wastes of time.
+
 [![Unity_2018-03-08_01-36-55.png](https://s18.postimg.org/onpwdxzrd/Unity_2018-03-08_01-36-55.png)](https://postimg.org/image/ims7gvd51/)
+
+
+
 
 We run this for 1,000,000 STEPS to learn this .. even after this many steps we still do not have it perfect though.
 
