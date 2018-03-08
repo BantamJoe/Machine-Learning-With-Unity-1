@@ -85,7 +85,7 @@ In the bottom left is tracked : Distance to Car, Ground we are on (safe or dange
 
 --------------------------
 
-Scripts: [ TrafficController.cs , TrafficColScript ]
+Scripts: TrafficController.cs , TrafficColScript.cs
 
 Set-up: A Cube can move in four different directions, with rewards being given to better positions releative to the goal as
 well as better rewards for being on a safer path and avoiding getting close to a passing "car".
