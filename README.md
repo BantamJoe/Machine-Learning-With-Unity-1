@@ -156,6 +156,8 @@ We can see our Agent slightly veers to the right in instances when the car is on
 ---------------------------
 Lets create a "Peg" maze, where each red cube is considered a wall and in each step, our agent determines its relative distance to its closest "wall", giving better rewards for positiong.
 
+[![Unity_2018-03-08_01-36-55.png](https://s18.postimg.org/onpwdxzrd/Unity_2018-03-08_01-36-55.png)](https://postimg.org/image/ims7gvd51/)
+
 Set-up: A Cube can move in four different directions, with rewards being given for safer paths away from walls.
 
 Goal: Move to the green capsule, using the most rewarding path away from walls if you can.
@@ -197,7 +199,7 @@ Reset Parameters:
 --------------------------
 
 
-[![Unity_2018-03-08_01-36-55.png](https://s18.postimg.org/onpwdxzrd/Unity_2018-03-08_01-36-55.png)](https://postimg.org/image/ims7gvd51/)
+
 
 
 
