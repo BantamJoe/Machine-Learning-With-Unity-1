@@ -178,3 +178,6 @@ We run this for 1,000,000 STEPS to learn this .. even after this many steps we s
 As you can see, the reienforced learning does solve the maze most of the time, yet it will will miss its goal or hit a wall every now and then. After more training we could scrub this out.
 
 [![Peg_Maze_KKSteps.gif](https://s18.postimg.org/8cpshkae1/Peg_Maze_KKSteps.gif)](https://postimg.org/image/4gcglkped/)
+
+
+If we change our wall check to perhaps ~ 12-15 instead of 7.5 we may avoid that corner better.
