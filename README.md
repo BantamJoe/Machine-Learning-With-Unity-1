@@ -81,6 +81,9 @@ Next to make some harder maps..
 Lets add a object to get in the way sometimes..
 
 [![Traffic_Gif2.gif](https://s18.postimg.org/ytpb5q81l/Traffic_Gif2.gif)](https://postimg.org/image/5ejmwq3hx/)
+
+In the bottom left is tracked : Distance to Car, Ground we are on (safe or dangerouse) and wether the agent is alive or not
+
 --------------------------
 
 Set-up: A Cube can move in four different directions, with rewards being given to better positions releative to the goal as
