@@ -124,8 +124,21 @@ Reset Parameters:
     
     
 --------------------------
+Going back to our PPO Notebook..
+[![chrome_2018-03-07_21-42-40.png](https://s18.postimg.org/bgr9mqudl/chrome_2018-03-07_21-42-40.png)](https://postimg.org/image/aeh347bk5/)
+
+We run for 500,000 steps, recording and updating every 20,000 intervals..
+
+[![chrome_2018-03-07_21-26-48.png](https://s18.postimg.org/77mjki6ix/chrome_2018-03-07_21-26-48.png)](https://postimg.org/image/i77qw3wxx/)
+
+This starts off a little slower than our straight line to the goal it seems.. 
+
+[![chrome_2018-03-07_21-27-33.png](https://s18.postimg.org/f0d7cif2x/chrome_2018-03-07_21-27-33.png)](https://postimg.org/image/l1aw9l1p1/)
+
+The progress IS made though, a decent mean reward for 500,000 steps.
 
 
+Lets plug our newly trained brain into the traffic civilian and see how well he avoids the car..
 
 
 [![Traffic_Gif3.gif](https://s18.postimg.org/642f94ec9/Traffic_Gif3.gif)](https://postimg.org/image/ez39jn34l/)
