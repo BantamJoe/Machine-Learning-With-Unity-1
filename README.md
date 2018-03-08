@@ -8,8 +8,7 @@ We use the following in our simulation:
 - Jupyter
 - Matplotlib
 - numpy
-- Pillow
-- Python (2 or 3; 64bit required)
+- Python 
 - CUDA toolkit 9.0
 - TensorFlow (1.4) (Training)
 
