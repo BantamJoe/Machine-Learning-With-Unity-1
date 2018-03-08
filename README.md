@@ -167,10 +167,10 @@ Agents: The enviorment contains one single agent linked to one brain.
 Reward Function:
  - -.01 for each move move
  - +.01 for each move away from start
- - + 1 if closer to goal but also closer to start ( + 2 if closest wall is farther than 7.5)
- - + 2 if closer to goal AND closer to start
- - + 4 is closer to goal AND closer to start AND nearest wall is >7.5 away
- - - 1  if closer to start than before
+ - +1 if closer to goal but also closer to start ( + 2 if closest wall is farther than 7.5)
+ - +2 if closer to goal AND closer to start
+ - +4 is closer to goal AND closer to start AND nearest wall is >7.5 away
+ - -1  if closer to start than before
  
  - -.5 if a wall is 7.5F or closer
  - -100.0 for hitting a wall 
