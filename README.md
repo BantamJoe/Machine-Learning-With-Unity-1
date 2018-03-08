@@ -153,3 +153,14 @@ Lets plug our newly trained brain into the traffic civilian and see how well he 
 
 We can see our Agent slightly veers to the right in instances when the car is on the oposite side as well as studder steping back when the car approaches from the right.. maybe after a million or two steps we could get full avoidance!
 
+Lets create a "Peg" maze, where each red cube is considered a wall and in each step, our agent determines its relative distance to its closest "wall", giving better rewards for positiong.
+[![Unity_2018-03-08_01-36-55.png](https://s18.postimg.org/onpwdxzrd/Unity_2018-03-08_01-36-55.png)](https://postimg.org/image/ims7gvd51/)
+
+We run this for 1,000,000 STEPS to learn this .. even after this many steps we still do not have it perfect though.
+
+[![chrome_2018-03-08_01-40-24.png](https://s18.postimg.org/4t3urxuvd/chrome_2018-03-08_01-40-24.png)](https://postimg.org/image/43l2fkubp/)
+
+
+As you can see, the reienforced learning does solve the maze most of the time, yet it will will miss its goal or hit a wall every now and then. After more training we could scrub this out.
+
+[![Peg_Maze_KKSteps.gif](https://s18.postimg.org/8cpshkae1/Peg_Maze_KKSteps.gif)](https://postimg.org/image/4gcglkped/)
