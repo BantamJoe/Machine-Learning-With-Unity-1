@@ -143,6 +143,10 @@ The progress IS made though, a decent mean reward for 500,000 steps.
 
 Lets plug our newly trained brain into the traffic civilian and see how well he avoids the car..
 
+(You may need to click this to load)
 
 [![Traffic_Gif3.gif](https://s18.postimg.org/642f94ec9/Traffic_Gif3.gif)](https://postimg.org/image/ez39jn34l/)
+
+
+We can see our Agent slightly veers to the right in instances when the car is on the oposite side as well as studder steping back when the car approaches from the right.. maybe after a million or two steps we could get full avoidance!
 
