@@ -156,7 +156,7 @@ We can see our Agent slightly veers to the right in instances when the car is on
 ---------------------------
 Lets create a "Peg" maze, where each red cube is considered a wall and in each step, our agent determines its relative distance to its closest "wall", giving better rewards for positiong.
 
-[![Unity_2018-03-08_01-36-55.png](https://s18.postimg.org/onpwdxzrd/Unity_2018-03-08_01-36-55.png)](https://postimg.org/image/ims7gvd51/)
+[![2018-03-08_20-01-44.png](https://s18.postimg.org/82rx9f709/2018-03-08_20-01-44.png)](https://postimg.org/image/zdd8hc9x1/)
 
 Set-up: A Cube can move in four different directions, with rewards being given for safer paths away from walls.
 
@@ -196,21 +196,9 @@ Reset Parameters:
     
     
 --------------------------
+We train for 500,000 steps 
+[![chrome_2018-03-08_20-04-22.png](https://s18.postimg.org/yp4dxv8h5/chrome_2018-03-08_20-04-22.png)](https://postimg.org/image/wkk0ws6ud/)
+
+[![Peg_Maze500k.gif](https://s18.postimg.org/ynug50byh/Peg_Maze500k.gif)](https://postimg.org/image/w6ioxqs1x/)
 
 
-
-
-
-
-
-We run this for 1,000,000 STEPS to learn this .. even after this many steps we still do not have it perfect though.
-
-[![chrome_2018-03-08_01-40-24.png](https://s18.postimg.org/4t3urxuvd/chrome_2018-03-08_01-40-24.png)](https://postimg.org/image/43l2fkubp/)
-
-
-As you can see, the reienforced learning does solve the maze most of the time, yet it will will miss its goal or hit a wall every now and then. After more training we could scrub this out.
-
-[![Peg_Maze_KKSteps.gif](https://s18.postimg.org/8cpshkae1/Peg_Maze_KKSteps.gif)](https://postimg.org/image/4gcglkped/)
-
-
-If we change our wall check to perhaps ~ 12-15 instead of 7.5 and give better reward for say +25 away from walls, we can get a much safer path i think.
