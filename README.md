@@ -1,9 +1,6 @@
 # Machine-Learning-With-Unity
 
-For this repo we will be working in Unity 2017.3.1f to train on various scenarios with Machine Learning techniques.
-
-
-And using ML-Agents : https://github.com/Unity-Technologies/ml-agents
+For this repo we will be working in Unity 2017.3.1f to train on various scenarios with Machine Learning techniques using ML-Agents: https://github.com/Unity-Technologies/ml-agents
 
 Specifically PPO ( Proximal Policy Optimization ) Reinforcement Learning
 
@@ -140,8 +137,6 @@ Reset Parameters:
     
     
 --------------------------
-Going back to our PPO Notebook..
-[![chrome_2018-03-07_21-42-40.png](https://s18.postimg.org/bgr9mqudl/chrome_2018-03-07_21-42-40.png)](https://postimg.org/image/aeh347bk5/)
 
 We run for 500,000 steps, recording and updating every 20,000 intervals..
 
