@@ -45,6 +45,9 @@ public class CubeAgent : Agent {
 		state.Add (cube.transform.position.x);
 		state.Add (cube.transform.position.y);
 		state.Add (cube.transform.position.z);
+		state.Add (cube.transform.GetComponent<Rigidbody>().velocity.x);
+		state.Add (cube.transform.GetComponent<Rigidbody>().velocity.y);
+		state.Add (cube.transform.GetComponent<Rigidbody>().velocity.z);
 		state.Add (closestWall);
 		state.Add (_dist);
 		return state;
@@ -52,8 +55,8 @@ public class CubeAgent : Agent {
 	}
 
 	public override void AgentReset(){
-
-		cube.transform.position = new Vector3 (0f,-2.962389f,-1.2f);
+		// Start position.
+		cube.transform.position = new Vector3 (-2.9f,-2.962389f,-1.2f);
 		isAlive = 1;
 		foundEnd = 0;
 		closestWall = 100.0f;
@@ -92,8 +95,8 @@ public class CubeAgent : Agent {
 		GameObject _Start = GameObject.Find ("START");
 
 
-		float beforeDist = Vector3.Distance (_Goal.transform.position, cube.transform.position);
-		float beforeDist2 = Vector3.Distance (_Start.transform.position, cube.transform.position);
+		float DistFromGoal = Vector3.Distance (_Goal.transform.position, cube.transform.position);
+		float DistFromStart = Vector3.Distance (_Start.transform.position, cube.transform.position);
 
 		if (text != null)
 			text.text = string.Format ("Closest Wall:{0}", closestWall);
@@ -125,8 +128,8 @@ public class CubeAgent : Agent {
 
 			}
 
-		float afterDist = Vector3.Distance (_Goal.transform.position, cube.transform.position);
-		float afterDist2 = Vector3.Distance (_Start.transform.position, cube.transform.position);
+		float DistFromGoal2 = Vector3.Distance (_Goal.transform.position, cube.transform.position);
+		float DistFromStart2 = Vector3.Distance (_Start.transform.position, cube.transform.position);
 
 
 
@@ -136,58 +139,81 @@ public class CubeAgent : Agent {
 		  if (isAlive == 0) 
 		{
 		
-			reward -= 100f;
+			reward -=1f;
 			done = true;
 			return;
 		
 		}
 
 
-			
 
-
-		 if  (closestWall < 7.5f)
-			reward -= .5f;
+		 //if  (closestWall > 15f)
+		//	reward += .02f;
 		
 
-		//Negative progress closer to begninig or farther away from goal
-		if (afterDist2 < beforeDist2 && afterDist > beforeDist) 
+		//Negative progress: closer to start
+		if (DistFromStart2 < DistFromStart) 
 		{
-			reward -= 1f;
+
+			if (DistFromGoal > DistFromGoal2) 
+			{
+				if (closestWall > 15f) 
+				{
+					// And making progressive away from where we started
+					reward += .02f;
+				} 
+				else 
+				{
+					reward += .01f;
+				}
+
+
+
+			}
+			else
+			{
+				reward -= .02f;
+			}
 		}
 
 
 
 
 		// Making progress: closer to goal & Farther away from begining
-		if (afterDist2 > beforeDist2) {
-			// Away from walls
-			if (afterDist < beforeDist) {
-				if (closestWall > 7.5f) {
-					// And making progressive away from where we started
-					reward += 4f;
-				} else
-					reward += 2f;
-			} else
+		if (DistFromStart2 > DistFromStart)
+		
+		{
+			// closer to goal now, 5f < 7f
+			if (DistFromGoal2 < DistFromGoal) 
+			
+			{
 				reward += .01f;
+
+			}
+
+
+
+
+			if (closestWall > 15f) {
+				// And making progressive away from where we started
+				reward += .02f;
+			} 
+			else
+			{
+				reward += .01f;
+			}
+					
+				
+			 
 		} 
 
-		if (afterDist < beforeDist && afterDist2 < beforeDist2) {
-			if (closestWall > 7.5f) {
-				// And making progressive with no close wall.
-				reward += 2f;
-			} else 
-			{
-				reward += 1f;
-			}
-			
 
-		}
+
 
 			
 		if (foundEnd == 1) {
 			solved++;
-			reward += 300f;
+			reward += 1f;
 
 			done = true;
 			return;
@@ -205,3 +231,4 @@ public class CubeAgent : Agent {
 	}
 
 }
+
