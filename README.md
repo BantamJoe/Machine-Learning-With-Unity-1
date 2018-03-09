@@ -158,6 +158,9 @@ Lets plug our newly trained brain into the traffic civilian and see how well he 
 
 We can see our Agent slightly veers to the right in instances when the car is on the oposite side as well as studder steping back when the car approaches from the right.. maybe after a million or two steps we could get full avoidance!
 ---------------------------
+
+* I've learned that smaller values are better than large values and rewards > punishment in most cases *
+
 Lets create a "Peg" maze, where each red cube is considered a wall and in each step, our agent determines its relative distance to its closest "wall", giving better rewards for positiong.
 
 [![2018-03-08_20-01-44.png](https://s18.postimg.org/82rx9f709/2018-03-08_20-01-44.png)](https://postimg.org/image/zdd8hc9x1/)
