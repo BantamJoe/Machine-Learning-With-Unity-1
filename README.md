@@ -212,3 +212,12 @@ With the same reward system, we can apply our learner to a minefield as well:
 [![Unity_2018-03-08_20-16-20.png](https://s18.postimg.org/5mq3vfrgp/Unity_2018-03-08_20-16-20.png)](https://postimg.org/image/mn90444hx/)
 
 
+After about 720k steps its looking pretty similar .. so lets stop there and test it
+
+
+[![chrome_2018-03-08_20-30-00.png](https://s18.postimg.org/scp8ogsop/chrome_2018-03-08_20-30-00.png)](https://postimg.org/image/l9hd8un91/)
+
+
+It seems the agent has found the most rewarding path! Utilizing the open space in the left upper corner.
+
+[![Mine_Field720k2.gif](https://s18.postimg.org/t2810v3ix/Mine_Field720k2.gif)](https://postimg.org/image/85bsw75hx/)
