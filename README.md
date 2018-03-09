@@ -197,7 +197,12 @@ Reset Parameters:
     
 --------------------------
 We train for 500,000 steps 
+
+This represents a good confidence.
+
 [![chrome_2018-03-08_20-04-22.png](https://s18.postimg.org/yp4dxv8h5/chrome_2018-03-08_20-04-22.png)](https://postimg.org/image/wkk0ws6ud/)
+
+Our brain can now navigate safely through the maze.
 
 [![Peg_Maze500k.gif](https://s18.postimg.org/ynug50byh/Peg_Maze500k.gif)](https://postimg.org/image/w6ioxqs1x/)
 
