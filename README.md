@@ -162,26 +162,25 @@ Set-up: A Cube can move in four different directions, with rewards being given f
 
 Goal: Move to the green capsule, using the most rewarding path away from walls if you can.
 
-Agents: The enviorment contains one single agent linked to one brain.
+Agents: The envi. contains one single agent linked to one brain.
 
 Reward Function:
  - -.01 for each move move
- - +.01 for each move away from start
- - +1 if closer to goal but also closer to start ( + 2 if closest wall is farther than 7.5)
- - +2 if closer to goal AND closer to start
- - +4 is closer to goal AND closer to start AND nearest wall is >7.5 away
- - -1  if closer to start than before
- 
- - -.5 if a wall is 7.5F or closer
- - -100.0 for hitting a wall 
- - +300 for hitting the end
+ - +.02 Nearest wall is > 15f away |Positive Progressive Towards End | Negative Progressive Torwards start
+ - +.01 Positive Progressive Towards End | Negative Progressive Torwards start
+ - +.01 Negative Progressive Torwards start |  Positive Progress Towards End
+ - -.02 Negative Progress Torwards End | Negative Progress Torwards start
+ - +.03 If Nearest wall is > 15f away | Positive Progress towards End| Positive Progress Away from Start
+ - -1.0 for hitting a wall 
+ - +1.0 for hitting the end
   
 
 Brain: One Brain 
- - State Space:(Continuous) 8 Variables 
+ - State Space:(Continuous) 11 Variables 
     - Agents Status ( Alive or not ) 
     - Closest wall to agent
     - Agents X,Y,Z position on map
+    - Agents X,Y,Z Velocity
     - Agents Distance to begining
     - Agents Distance to goal
     - If the Agent has reached the goal
