@@ -207,3 +207,8 @@ Our brain can now navigate safely through the maze.
 [![Peg_Maze500k.gif](https://s18.postimg.org/ynug50byh/Peg_Maze500k.gif)](https://postimg.org/image/w6ioxqs1x/)
 
 
+With the same reward system, we can apply our learner to a minefield as well:
+
+[![Unity_2018-03-08_20-16-20.png](https://s18.postimg.org/5mq3vfrgp/Unity_2018-03-08_20-16-20.png)](https://postimg.org/image/mn90444hx/)
+
+
