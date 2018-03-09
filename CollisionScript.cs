@@ -1,4 +1,5 @@
 /*
+// Author: Ryan Oglesby
 CollisionScript.cs used to update the agents values when colliding with wall or goal.
 */
 
