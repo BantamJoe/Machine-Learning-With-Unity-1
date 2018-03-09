@@ -16,74 +16,12 @@ We use discrete actions(Keyboard) vs continuose like a joystick, so our batch si
 We do not need many hidden units since our problems are not that complex.
 
 
-
 [![chrome_2018-03-08_20-34-40.png](https://s18.postimg.org/w92kkknzt/chrome_2018-03-08_20-34-40.png)](https://postimg.org/image/azey9q7p1/)
 
 
-We will create a simple maze to begin with , very basic.
-
-The red walls are tagged "KILL" , the green capsul is tagged "END", when our cube encounters collision, we check the tag.
-
-We attach a CollisionScript.cs to our cube, which will work with our CubeAgent.cs class to set its reset parameters when we encounter a wall or a capsul ( end goal )
-
-[![Unity_2018-03-07_01-10-56.png](https://s18.postimg.org/x1d1ox2d5/Unity_2018-03-07_01-10-56.png)](https://postimg.org/image/wbu9ck1th/)
-
-Set-up: A Cube can move in four different directions, with rewards being given to better positions releative to the goal.
-
-Goal: Move to the green capsule, using the most rewarding path.
-
-Agents: The enviorment contains one single agent linked to one brain.
-
-Reward Function:
- - -.1 for each move move
- - +.2 if progressive made ( Closer to goal than before )
- - -1.0 for hitting a wall 
- - +100 for hitting the end
-  
-
-Brain: One Brain 
- - State Space:(Continuous) 6 Variables 
-    - Agents Status ( Alive or not ) 
-    - Agents X,Y,Z position on map
-    - Agents Distance to goal
-    - If the Agent has reached the goal
- 
- - Action Space:(Discrete) 4 variables
-    - Movement in 4 directions N W S E
-    
-Reset Parameters:
-  Two:
-   - If the agent collides with a wall
-   - If the agent collides with the end goal collider
-    
-    
-    
---------------------------
 
 
-
-After training our agent using Proximal Policy Optimization provided by Unity ML Agents:
-
-Step: 20000. Mean Reward: 2.2039705882352942. Std of Reward: 17.152717169394837.
-
-This means we have are making some progressive torwards our goal, but end up hitting a wall most of the time.
-
-Step: 100000. Mean Reward: 46.53655172413793. Std of Reward: 50.58151923488849.
-
-We are making steady progress, it appears we hit the goal sometimes!
-
-Step: 500000. Mean Reward: 95.1213043478261. Std of Reward: 23.166009077084173.
-It looks like we hit the goal most of the time, but waste some time getting there.
-
-- After 500000 Steps are agent can now make it to the goal most of the time. 
-
-[![Maze_Gif.gif](https://s18.postimg.org/x56v4vabt/Maze_Gif.gif)](https://postimg.org/image/4fjz886bp/)
-
-Clearly we are making progress! This can continue until we are near perfect..
-
-Next to make some harder maps..
-
-Lets add a object to get in the way sometimes..
+Lets try to start with somthing basic
 
 [![Traffic_Gif2.gif](https://s18.postimg.org/ytpb5q81l/Traffic_Gif2.gif)](https://postimg.org/image/5ejmwq3hx/)
 
