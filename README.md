@@ -163,3 +163,5 @@ After about 720k steps its looking pretty similar .. so lets stop there and test
 It seems the agent has found the most rewarding path! Utilizing the open space in the left upper corner.
 
 [![Mine_Field720k2.gif](https://s18.postimg.org/t2810v3ix/Mine_Field720k2.gif)](https://postimg.org/image/85bsw75hx/)
+
+More to come..
