@@ -23,9 +23,7 @@ We do not need many hidden units since our problems are not that complex.
 
 Lets try to start with somthing basic
 
-[![Traffic_Gif2.gif](https://s18.postimg.org/ytpb5q81l/Traffic_Gif2.gif)](https://postimg.org/image/5ejmwq3hx/)
 
-In the bottom left is tracked : Distance to Car, Ground we are on (safe or dangerouse) and wether the agent is alive or not
 
 --------------------------
 
@@ -69,6 +67,8 @@ Reset Parameters:
    - If the agent gets hit by the car
    - If the agent collides with the end goal collider
     
+    
+  [![Traffic_Gif2.gif](https://s18.postimg.org/ytpb5q81l/Traffic_Gif2.gif)](https://postimg.org/image/5ejmwq3hx/)  
     
     
 --------------------------
