@@ -1,14 +1,11 @@
 # Machine-Learning-With-Unity
 
-For this repo we will be working in Unity 2017.3.1f to train on various scenarios with Machine Learning techniques using ML-Agents: https://github.com/Unity-Technologies/ml-agents
+For this repo i will be working in Unity 2017.3.1f to train various scenarios with Machine Learning agent techniques using ML-Agents: https://github.com/Unity-Technologies/ml-agents
 
 Specifically PPO ( Proximal Policy Optimization ) Reinforcement Learning
 
-We use the following in our simulation:
+We use the following:
 - Jupyter
-- Matplotlib
-- numpy
-- Python 
 - CUDA toolkit 9.0
 - TensorFlow (1.4) (Training)
 
