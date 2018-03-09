@@ -16,6 +16,15 @@ We use the following in our simulation:
 - TensorFlow (1.4) (Training)
 
 
+My parameters used:
+
+We use discrete actions(Keyboard) vs continuose like a joystick, so our batch size stays small. 
+We do not need many hidden units since our problems are not that complex.
+
+
+
+[![chrome_2018-03-08_20-34-40.png](https://s18.postimg.org/w92kkknzt/chrome_2018-03-08_20-34-40.png)](https://postimg.org/image/azey9q7p1/)
+
 
 We will create a simple maze to begin with , very basic.
 
