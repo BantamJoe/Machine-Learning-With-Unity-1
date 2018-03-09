@@ -100,6 +100,8 @@ Lets create a "Peg" maze, where each red cube is considered a wall and in each s
 
 [![2018-03-08_20-01-44.png](https://s18.postimg.org/82rx9f709/2018-03-08_20-01-44.png)](https://postimg.org/image/zdd8hc9x1/)
 
+Scripts: PegCubeAgent.cs, ColliderScript.cs
+
 Set-up: A Cube can move in four different directions, with rewards being given for safer paths away from walls.
 
 Goal: Move to the green capsule, using the most rewarding path away from walls if you can.
