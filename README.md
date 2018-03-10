@@ -167,3 +167,46 @@ It seems the agent has found the most rewarding path! Utilizing the open space i
 [![Mine_Field720k2.gif](https://s18.postimg.org/t2810v3ix/Mine_Field720k2.gif)](https://postimg.org/image/85bsw75hx/)
 
 More to come..
+
+
+
+----------------------------
+
+Next i made this scenario.. trying to keep the details of the goal away from the agent now
+
+[![Unity_2018-03-09_22-52-24.png](https://s18.postimg.org/lbxkkbwq1/Unity_2018-03-09_22-52-24.png)](https://postimg.org/image/uwh777m1x/)
+
+Scripts: BridgeAgent.cs, BridgeController.cs, CollisionScript.cs
+
+Set-up: An agent can move in 4 directions, a button is located on the platform that moves the second platform, enabling the goal to be reached.
+
+Goal: Move to the green capsule, by pressing the button first to connect the platforms.
+
+Agents: The envi. contains one single agent linked to one brain.
+
+
+Reward Function:
+ -= .01f for each step
+ 
+ += .005f for each step that the button is pressed
+ 
+ += 1.0f for reaching the goal
+ 
+ -= 1.0f for falling off platform
+
+Brain: One Brain 
+ - State Space:(Continuous) 10 Variables 
+
+    - Agents X,Y,Z position on map
+    - Agents X,Y,Z Velocity
+    - Status of the bridge ( connected or not ) 
+    - bridge X,Y,Z position on map
+    
+ 
+ - Action Space:(Discrete) 4 variables
+    - Movement in 4 directions N W S E
+    
+    Reset Parameters:
+  Two:
+   - If the agent collides with a wall peg
+   - If the agent collides with the end goal collider
