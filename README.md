@@ -210,3 +210,11 @@ Brain: One Brain
   Two:
    - If the agent collides with a wall peg
    - If the agent collides with the end goal collider
+   
+   
+   I ran this for 1,500,000 steps to try and smooth out it out a bit, still has a buffer to it though.
+   
+   [![chrome_2018-03-10_00-20-42.png](https://s18.postimg.org/ap3rf943t/chrome_2018-03-10_00-20-42.png)](https://postimg.org/image/hsbmuv9j9/)
+
+
+[![Bridge1500k.gif](https://s18.postimg.org/mqz590fsp/Bridge1500k.gif)](https://postimg.org/image/j7d7j7d2t/)
