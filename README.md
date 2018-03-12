@@ -211,7 +211,7 @@ Brain: One Brain
     Reset Parameters:
   Two:
    - If the agent collides with a wall peg
-   - If the agent collides with the end goal collider
+   - If the agent falls off the platform
    
    
    I ran this for 1,500,000 steps to try and smooth out it out a bit, still has a buffer to it though.
