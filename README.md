@@ -186,13 +186,15 @@ Agents: The envi. contains one single agent linked to one brain.
 
 
 Reward Function:
- -= .01f for each step
+
+
+- -= .01f for each step
  
- += .005f for each step that the button is pressed
+-  += .005f for each step that the button is pressed
  
- += 1.0f for reaching the goal
+- += 1.0f for reaching the goal
  
- -= 1.0f for falling off platform
+- -= 1.0f for falling off platform
 
 Brain: One Brain 
  - State Space:(Continuous) 10 Variables 
