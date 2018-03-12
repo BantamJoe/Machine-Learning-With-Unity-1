@@ -218,3 +218,43 @@ Brain: One Brain
 
 
 [![Bridge1500k.gif](https://s18.postimg.org/mqz590fsp/Bridge1500k.gif)](https://postimg.org/image/j7d7j7d2t/)
+
+----------------------------
+
+Next up i decided to implement somthing with shooting.. 
+
+I made up a simple little enviorment with 4 targets and one agent:
+
+[url=https://postimg.org/image/55tgfuwd1/][img]https://s18.postimg.org/55tgfuwd1/Unity_2018-03-11_20-03-49.png[/img][/url]
+
+Scripts: ShooterAgent.cs , TargetCollider.cs
+
+Set-Up: 4 targets are located on a platform, each one can be hit once to give a score of +1, the agent can shoot up to 100 times before the scene is reset, or up to 250 max steps to reset the scene as well.
+
+Goal: Shoot the 4 targets with using as least bullets as possible.
+
+Agents: 1 agent, 1 brain
+
+Reward Function:
+  - -=.01 for each step
+  - += 1.0 for hitting a target ( can only get 1 from each target max in each scene )
+  - -=.01 for each shot ( to discourage spamming all the bullets )
+  - += 01 for each step that a target is hit, so if 3 targets are hit then +.03 for that step.
+  
+ 
+Keep track of 3 things.
+State Space: 
+ - Agents Rotaion
+ - Agents remaining bullets
+ - number of targets hit 
+
+4 possible actions
+Discrete Actions:
+ - Rotate the agent left
+ - Rotate the agent right
+ - Shoot a projectile
+ - Do nothing
+ 
+Reset parameters:
+   - 250 steps 
+   - No bullets remaining.
