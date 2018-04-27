@@ -16,7 +16,7 @@ We use discrete actions(Keyboard) vs continuose like a joystick, so our batch si
 We do not need many hidden units since our problems are not that complex.
 
 
-[![chrome_2018-03-08_20-34-40.png](https://s18.postimg.cc/w92kkknzt/chrome_2018-03-08_20-34-40.png)](https://postimg.org/image/azey9q7p1/)
+[![chrome_2018-03-08_20-34-40.png](https://s18.postimg.cc/w92kkknzt/chrome_2018-03-08_20-34-40.png)](https://postimg.cc/image/azey9q7p1/)
 
 
 
@@ -68,18 +68,18 @@ Reset Parameters:
    - If the agent collides with the end goal collider
     
     
-  [![Traffic_Gif2.gif](https://s18.postimg.org/ytpb5q81l/Traffic_Gif2.gif)](https://postimg.org/image/5ejmwq3hx/)  
+  [![Traffic_Gif2.gif](https://s18.postimg.cc/ytpb5q81l/Traffic_Gif2.gif)](https://postimg.cc/image/5ejmwq3hx/)  
     
     
 --------------------------
 
 We run for 500,000 steps, recording and updating every 20,000 intervals..
 
-[![chrome_2018-03-07_21-26-48.png](https://s18.postimg.org/77mjki6ix/chrome_2018-03-07_21-26-48.png)](https://postimg.org/image/i77qw3wxx/)
+[![chrome_2018-03-07_21-26-48.png](https://s18.postimg.cc/77mjki6ix/chrome_2018-03-07_21-26-48.png)](https://postimg.cc/image/i77qw3wxx/)
 
 This starts off a little slower than our straight line to the goal it seems.. 
 
-[![chrome_2018-03-07_21-27-33.png](https://s18.postimg.org/f0d7cif2x/chrome_2018-03-07_21-27-33.png)](https://postimg.org/image/l1aw9l1p1/)
+[![chrome_2018-03-07_21-27-33.png](https://s18.postimg.cc/f0d7cif2x/chrome_2018-03-07_21-27-33.png)](https://postimg.cc/image/l1aw9l1p1/)
 
 The progress IS made though, a decent mean reward for 500,000 steps.
 
