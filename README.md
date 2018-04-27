@@ -88,7 +88,7 @@ Lets plug our newly trained brain into the traffic civilian and see how well he 
 
 (You may need to click this to load)
 
-[![Traffic_Gif3.gif](https://s18.postimg.org/642f94ec9/Traffic_Gif3.gif)](https://postimg.org/image/ez39jn34l/)
+[![Traffic_Gif3.gif](https://s18.postimg.cc/642f94ec9/Traffic_Gif3.gif)](https://postimg.cc/image/ez39jn34l/)
 
 
 We can see our Agent slightly veers to the right in instances when the car is on the oposite side as well as studder steping back when the car approaches from the right.. maybe after a million or two steps we could get full avoidance!
@@ -98,7 +98,7 @@ We can see our Agent slightly veers to the right in instances when the car is on
 
 Lets create a "Peg" maze, where each red cube is considered a wall and in each step, our agent determines its relative distance to its closest "wall", giving better rewards for positiong.
 
-[![2018-03-08_20-01-44.png](https://s18.postimg.org/82rx9f709/2018-03-08_20-01-44.png)](https://postimg.org/image/zdd8hc9x1/)
+[![2018-03-08_20-01-44.png](https://s18.postimg.cc/82rx9f709/2018-03-08_20-01-44.png)](https://postimg.cc/image/zdd8hc9x1/)
 
 Scripts: PegCubeAgent.cs, CollisionScript.cs
 
@@ -144,27 +144,27 @@ We train for 500,000 steps
 
 This represents a good confidence.
 
-[![chrome_2018-03-08_20-04-22.png](https://s18.postimg.org/yp4dxv8h5/chrome_2018-03-08_20-04-22.png)](https://postimg.org/image/wkk0ws6ud/)
+[![chrome_2018-03-08_20-04-22.png](https://s18.postimg.cc/yp4dxv8h5/chrome_2018-03-08_20-04-22.png)](https://postimg.cc/image/wkk0ws6ud/)
 
 Our brain can now navigate safely through the maze.
 
-[![Peg_Maze500k.gif](https://s18.postimg.org/ynug50byh/Peg_Maze500k.gif)](https://postimg.org/image/w6ioxqs1x/)
+[![Peg_Maze500k.gif](https://s18.postimg.cc/ynug50byh/Peg_Maze500k.gif)](https://postimg.cc/image/w6ioxqs1x/)
 
 
 With the same reward system, we can apply our learner to a minefield as well:
 
-[![Unity_2018-03-08_20-16-20.png](https://s18.postimg.org/5mq3vfrgp/Unity_2018-03-08_20-16-20.png)](https://postimg.org/image/mn90444hx/)
+[![Unity_2018-03-08_20-16-20.png](https://s18.postimg.cc/5mq3vfrgp/Unity_2018-03-08_20-16-20.png)](https://postimg.cc/image/mn90444hx/)
 
 
 After about 720k steps its looking pretty similar .. so lets stop there and test it
 
 
-[![chrome_2018-03-08_20-30-00.png](https://s18.postimg.org/scp8ogsop/chrome_2018-03-08_20-30-00.png)](https://postimg.org/image/l9hd8un91/)
+[![chrome_2018-03-08_20-30-00.png](https://s18.postimg.cc/scp8ogsop/chrome_2018-03-08_20-30-00.png)](https://postimg.cc/image/l9hd8un91/)
 
 
 It seems the agent has found the most rewarding path! Utilizing the open space in the left upper corner.
 
-[![Mine_Field720k2.gif](https://s18.postimg.org/t2810v3ix/Mine_Field720k2.gif)](https://postimg.org/image/85bsw75hx/)
+[![Mine_Field720k2.gif](https://s18.postimg.cc/t2810v3ix/Mine_Field720k2.gif)](https://postimg.cc/image/85bsw75hx/)
 
 More to come..
 
@@ -174,7 +174,7 @@ More to come..
 
 Next i made this scenario.. trying to keep the details of the goal away from the agent now
 
-[![Unity_2018-03-09_22-52-24.png](https://s18.postimg.org/lbxkkbwq1/Unity_2018-03-09_22-52-24.png)](https://postimg.org/image/uwh777m1x/)
+[![Unity_2018-03-09_22-52-24.png](https://s18.postimg.cc/lbxkkbwq1/Unity_2018-03-09_22-52-24.png)](https://postimg.cc/image/uwh777m1x/)
 
 Scripts: BridgeAgent.cs, BridgeController.cs, CollisionScript.cs
 
@@ -216,10 +216,10 @@ Brain: One Brain
    
    I ran this for 1,500,000 steps to try and smooth out it out a bit, still has a buffer to it though.
    
-   [![chrome_2018-03-10_00-20-42.png](https://s18.postimg.org/ap3rf943t/chrome_2018-03-10_00-20-42.png)](https://postimg.org/image/hsbmuv9j9/)
+   [![chrome_2018-03-10_00-20-42.png](https://s18.postimg.cc/ap3rf943t/chrome_2018-03-10_00-20-42.png)](https://postimg.cc/image/hsbmuv9j9/)
 
 
-[![Bridge1500k.gif](https://s18.postimg.org/mqz590fsp/Bridge1500k.gif)](https://postimg.org/image/j7d7j7d2t/)
+[![Bridge1500k.gif](https://s18.postimg.cc/mqz590fsp/Bridge1500k.gif)](https://postimg.cc/image/j7d7j7d2t/)
 
 ----------------------------
 
