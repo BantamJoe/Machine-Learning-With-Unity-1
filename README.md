@@ -16,7 +16,7 @@ We use discrete actions(Keyboard) vs continuose like a joystick, so our batch si
 We do not need many hidden units since our problems are not that complex.
 
 
-[![chrome_2018-03-08_20-34-40.png](https://s18.postimg.org/w92kkknzt/chrome_2018-03-08_20-34-40.png)](https://postimg.org/image/azey9q7p1/)
+[![chrome_2018-03-08_20-34-40.png](https://s18.postimg.cc/w92kkknzt/chrome_2018-03-08_20-34-40.png)](https://postimg.org/image/azey9q7p1/)
 
 
 
